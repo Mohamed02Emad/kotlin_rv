@@ -1,10 +1,12 @@
 package com.example.android.kotlinrv.recyclerView
 
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.android.kotlinrv.R
 
@@ -36,6 +38,7 @@ class AdapterRV(private val arrayList: ArrayList<NoteDataClass>) :
         holder.colorImg.setBackgroundColor(dataObject.color)
         holder.content.text = dataObject.content
         holder.title.text = dataObject.title
+
     }
 
     override fun getItemCount(): Int {
